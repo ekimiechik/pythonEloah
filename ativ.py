@@ -153,8 +153,101 @@
 # bonus = pts * taxa_de_bonus
 # print(f"o bonus é: {bonus:.2f} pts")
 
+#ativ26
+# idade = int(input("qual a sua idade? "))
+# if idade > 18:
+#     print("voce é maior de idade")
+# else:
+#     print("voce é menor de idade")
 
-# #ativ37
+#ativ27
+# gaxtos = int(input("valor gastos: "))
+# if gaxtos < 50:
+#     print("classe econômica")
+
+# if gaxtos > 50 and gaxtos < 100:
+#     print("classe intermediária")
+
+# else:
+#     print("classe executiva")
+
+#ativ28
+# idade = input("inira sua idade: ")
+# idade_minima = 16
+
+# if idade > idade_minima:
+#     print("pode votar")
+# else:
+#     print("não pode votar")
+
+#ativ30
+# numero = int(input("escreva um nmr: "))
+# numero2 = int(input("dgt outro nmr: "))
+
+# if numero > numero2:
+#     print("o primeiro nmr é maior", numero)
+# else:
+#     print("o segundo nmr é maior", numero2)
+
+#ativ31
+# nome = input("escreva seu nome: ")
+# idade = input("coloqu a sua idade: ")
+# nome2 = input("escreva seu nome:")
+# idade2 = input("coloque a sua idade: ")
+
+# if idade > idade2:
+#   print("este é o/a idoso/a: " ,nome)
+# elif idade2 > idade: 
+#    print("este é o/a idoso/a: " ,nome2)
+# else:
+#    print("estes são os idosos: " ,nome, nome2)
+
+#ativ32
+
+#ativ33
+# idade = int(input("qual é a sua iade? "))
+# if idade  > 0 or idade < 5:
+#     print("acho que vc ainda não sabe escrever")
+# elif idade > 5 or idade < 100:
+#     print("ok, vc tem idade", " anos.")
+
+#ativ34
+# nome = input("insira seu nome: ")
+# sobrinho1 = "Huguinho"
+# sobrinho2 = "Zezinho"
+# sobrinho3 = "Luizinho"
+
+# sobrinhoM1 = "Chiquinho"
+# sobrinhoM2 = "Francisquinho"
+
+# if nome == sobrinho1 or nome== sobrinho2 or nome == sobrinho3:
+#     print("você é sobrinho do pato Donald!")
+# elif nome == sobrinhoM1 or nome == sobrinhoM2:
+#     print("você é sobrinho do Mickey!")
+
+#ativ35
+# pts_curso = input("insira seus pontos: ")
+
+# if pts_curso < 0:
+#     print("impossível!")
+
+# elif pts_curso > 0 or pts_curso < 49:
+#     print("falha")
+# elif pts_curso > 50 or pts_curso < 59:
+#     print("sua nota é: 1")
+# elif pts_curso > 60 or pts_curso < 69:
+#     print("sua nota é: 2")
+# elif pts_curso > 70 or pts_curso < 79:
+#     print("sua nota é: 3")
+# elif pts_curso > 80 or pts_curso < 89:
+#     print("sua nota é: 4")
+# elif pts_curso > 90 or pts_curso < 99:
+#     print("sua nota é: 5")
+
+# else:
+#     print("impossível")
+
+#ativ37
 # ano = int(input("dgt um ano: "))
 # if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
 # print (f"{ano} e um, ano bi")
@@ -250,8 +343,6 @@
 # else:
 #    print("muitas tentativas...")
 
-#ativ43
-
 #exemplo2
 # numero = int(input("por favor, digite um numero: "))
 
@@ -260,7 +351,26 @@
 #     numero += 1
 #     print("execução finalizada.")
 
-#ativ44
+#ativ46
+# numero = int(input("dgt um numero: "))
+# if numero > 1:
+#     for i in range(1, numero):
+#       print(i)
+
+#ativ47
+# numero = int(input("dgt um nmr como limite: "))
+# nmrinicial = 1
+# while nmrinicial <= numero:
+#     print(nmrinicial)
+#     nmrinicial*= 2
+
+#ativ48
+# numero = int(input("dgt um nmr cmo limite: "))
+# base = int(input("dgt a base que será multiplicada: "))
+# nmrinicial = 1
+# while nmrinicial <= numero:
+#     print(nmrinicial)
+#     nmrinicial *= base
 
 #exemplo03
 # import re
@@ -273,4 +383,60 @@
 # print(numero_secreto)
 
 #ativ50
- 
+# sominha = 0 
+# while sominha <= 100:
+#     nmr = int(input("dgt um nmr: "))
+#     sominha += nmr
+# print("a soma é: ", sominha) 
+
+#ativ51
+# import re
+# def sennhacerta(senha):
+#     if len(senha) < 8:
+#         return False
+#     if not re.search("[A-Z]", senha):
+#         return False
+#     if not re.search("[a-z]", senha):
+#         return False
+#     if not re.search("[0-9]", senha):
+#         return False
+#     return True
+# while True:
+#     senha = input("dgt uma senha: ")
+#     if sennhacerta(senha):
+#         print("senha correta")
+#    else:
+#     print("senha incorreta")
+
+#ativ52
+# import random
+# numero = random.randint(1, 100)
+# while True:
+#     tentativa = int(input("adivinhe o nmr: "))
+#     if tentativa < numero:
+#         print("o numero secreto é maior que a tentativa")
+#     elif tentativa > numero:
+#         print("o numero secreto e menor que a tentativa")
+#     else:
+#         print("vc adivihou o numero!")
+#         break
+    
+ #exemplo4
+# inicio = "ex" #inicializa a variável com "ex"
+# fim = "emplo" #inicializa a variável fim com "emplo"
+# palavra = inicio + fim #concatena as variáveis e printará o resultado
+# print(palavra * 3)
+
+#exemplo04
+# palavra = "banana"
+# print(palavra * 3)
+
+#exemplo05
+# string_entrada = input("por favor, digite uma string: ")
+# print(string_entrada)
+# print("-" * len(string_entrada))
+
+#pratica
+
+#exemplo06
+# string_entrada = input ("por favor, digite uma string: ")
